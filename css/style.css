@@ -1,0 +1,311 @@
+body{
+    background-image: url(../imagenes/1051.jpg);
+    background-size: cover;
+}
+
+header{
+    width: 90%;
+    padding: 3% 0 0 3%;
+    margin: 0 auto;
+}
+
+main{
+    width: 90%;
+    display: block;
+    margin: auto auto;
+    
+}
+.logofooter{
+    margin-top: 1%;
+    width: 5%;
+}
+footer{
+    text-align: center;
+    padding: 1%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenidoIndex{
+    width: 60%;
+    display: block;
+    margin: 1% auto;
+}
+
+.imagenInicio{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.botonesInicio{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.boton{
+    border-radius: 24px;
+    font-size: 150%;
+    transition: 1s all;
+    cursor: pointer;
+    display: block;
+}
+
+.boton:active{
+    transform: scale(1.1);
+}
+
+#inicial{
+    position: relative;
+    width: 60%;
+    height: auto;
+    padding: 8%;
+    margin: 0 auto;
+    background: #0A3871;
+    color: #FFFFFF;
+    border-color: #0A3871;
+}
+
+#nuevaPalabra{
+    position: relative;
+    width: 60%;
+    height: auto;
+    padding: 5%;
+    margin: 5% auto;
+    background: #D8DFE8;
+    color: #0A3871;
+    border-color: #0A3871;
+}
+
+/*STYLE ADD PALABRA*/
+.agregar{
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.agregar label{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: #05ff26;
+    margin: 0 0 5%;
+}
+
+#addPalabra{
+    display: block;
+    padding: 10px 25px;
+    width: 50%;
+    margin: 0 auto 15%;
+    border: 0;
+    outline: none;
+    background-color: lightgrey;
+    
+}
+
+#agregarPalabra{
+    position: relative;
+    background: #90a0b6;
+    color: #04172e;
+    border-color: #0A3871;
+    width: 48%;
+    margin: 0 1%;
+}
+
+.camino{
+    position: relative;
+    display: inline-flex;
+    margin: 0 auto 3%;
+    width: 80%;
+    text-align: center;
+}
+
+.return{
+    width: 48%;
+}
+
+#volver{
+    position: relative;
+    background: #0A3871;
+    color: #FFFFFF;
+    border-color: #0A3871;
+    width: 100%;
+    padding: 7% 0;
+    margin: 0 1%;
+}
+
+
+/*STYLE JUEGO*/
+
+.contenedor{
+    width: 65.9%;
+    margin: 0 auto;
+    display: flex;
+}
+
+canvas{
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.correctas{
+    position: relative;
+    width: auto;
+    display: flex;
+    padding-top: 0%;
+    padding-bottom: 1%;
+
+}
+
+.contenidoFallos{
+    margin: auto auto;
+}
+
+.incorrectas{
+    position: relative;
+    width: auto;
+    display: flex;
+    text-align: center; 
+}
+
+.caja{
+    margin: 0 auto;
+    display: flex;
+}
+
+span{
+    width: auto;
+    text-align: center;
+    display: block;
+    color: #098f14;
+}
+
+span.lineas{
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    border-bottom: 3px solid #0A3871;
+    color: #05ff26;
+    font-size: 50px;
+}
+
+span.linea{
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    border-bottom: 3px solid #0A3871;
+    color: #f00606;
+    font-size: 50px;
+}
+
+.titulo{
+    padding-top: 1%;
+    color: rgb(253, 186, 0);
+    text-align: center;
+    font-size: 40px;
+}
+
+.intentos{
+    color: #05ff26;
+    
+}
+
+.botones{
+    display: flex;
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+.botones a{
+    width: 50%;
+}
+
+#nuevoJuego{
+    width: 50%;
+    height: auto;
+    padding: 2%;
+    margin: 1%;
+    background: #0A3871;
+    color: #FFFFFF;
+    border-color: #0A3871;
+}
+
+#desistir{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    margin: 2%;
+    background: #D8DFE8;
+    color: #0A3871;
+    border-color: #0A3871;
+}
+
+@media screen and (max-width: 900px){
+    .bienvenido{
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagenInicio{
+        width: 65%;
+        margin: 0 auto;
+    }
+    
+    .cartel{
+        width: 100%;
+    }
+    
+    .botonesInicio{
+        position: relative;
+        width: auto;
+        margin: 0;
+    }
+    .contenidoIndex{
+        position: relative;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1152px){
+    .contenedor{
+        display: block;
+    }
+    .boton{
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 620px){
+    span.lineas , span.linea{
+        width: 35px;
+        height: 35px;
+        margin: 2px;
+        border-bottom: 3px solid #0A3871;
+        font-size: 35px; 
+    }
+
+    .boton{
+        font-size: 100%;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .cartel{
+        width: 100%;
+    }
+
+    .contenedor{
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+}

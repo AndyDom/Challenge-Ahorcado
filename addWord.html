@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+		<title>Ahorcado</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body> 
+        <header>
+            <img src="imagenes/Logo.png" alt="logoAlura">
+        </header>
+		<main>
+			<div class="agregar">
+                <label for="ingreso">Ingrese la palabra a agregar</label>
+                <input type="text" id="addPalabra" required placeholder="INGRESE SOLO LETRAS">
+                
+				
+
+				<div class="camino">
+					<button class="boton" id="agregarPalabra" onclick="agregarPalabra()" type="button">Agregar y jugar</button>
+					
+					<a href="index.html" class="return"> <button class="boton" id="volver" type="button">Volver a Inicio</button></a>
+				</div>
+               
+            </div>
+        </main>
+		<footer>
+			<p>Desarrollado por Andres Dominguez</p>
+			<div class="pie">
+				<img class="logofooter" src="imagenes/linkedin.png" alt="linkedin">
+				<img class="logofooter" src="imagenes/github.png" alt="github">
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/addWord.js"></script>
+	</body>
+</html>

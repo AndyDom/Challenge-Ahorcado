@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+		<title>A jugar</title>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+		<header>
+            <img src="imagenes/Logo.png" alt="logoAlura">
+        </header>
+		 
+		<main>
+		<!--style="border: none;"-->
+			<section class="contenedor">
+				<canvas id="canvas" width="400" height="400" >Canvas is not supported</canvas>
+
+				<div class="contenidoFallos">
+					<p class="titulo">Fallos</p>
+					<div class = "incorrectas">
+						<div class="caja">
+							<span class="linea" id="fallo1"></span>
+							<span class="linea" id="fallo2"></span>
+							<span class="linea" id="fallo3"></span>
+							<span class="linea" id="fallo4"></span>
+							<span class="linea" id="fallo5"></span>
+							<span class="linea" id="fallo6"></span>
+							<span class="linea" id="fallo7"></span>
+							<span class="linea" id="fallo8"></span>
+							<span class="linea" id="fallo9"></span>
+						</div>
+					</div>
+					<p class="titulo">Cantidad de Intentos: <span" id="intentos"></span></p>
+				</div>
+				
+			</section>
+			<p class="titulo">Palabra</p>
+			<div class = "correctas">
+				<div class="caja" id="palabra">
+				</div>
+			</div>
+			
+
+
+			<div class="botones">
+				<button class="boton" id="nuevoJuego" type="button" onclick="nuevoJuego()">Nuevo juego</button>
+				
+				
+				<a href="index.html"><button class="boton" id="desistir" type="button">Desistir</button></a>
+				
+			</div>
+
+			
+        </main>
+
+		<footer>
+			<p>Desarrollado por Andres Dominguez</p>
+			<div class="pie">
+				<img class="logofooter" src="imagenes/linkedin.png" alt="linkedin">
+				<img class="logofooter" src="imagenes/github.png" alt="github">
+			</div>
+		</footer>
+		<script src="./js/game.js"></script>	
+	</body>
+	
+</html>
